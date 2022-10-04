@@ -10,7 +10,8 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-string [] array = new string [] {"1234", "1567", "-2", "computer science"};
+
+string [] array = new string [] {"Hello", "2", "world", ":-)"};
 Console.WriteLine(String.Join("  ",array));
 
 string [] newArray = new string [array.Length];
@@ -21,6 +22,7 @@ for (int i=0; i<array.Length; i++)
     if (array[i].Length <=3)
     {
         newArray[k] = array[i];
+        k++;
     }
 }
 Console.WriteLine(String.Join("  ",newArray));
